@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { header } from '../theme.config'
 
@@ -6,17 +7,18 @@ const Header = () => (
     <nav className='flex justify-between items-center py-10 font-bold'>
       <Link href='/'>
         <a className='text-xl' aria-label={header.site}>
-          {/* <img
-            className='inline-block mr-2'
-            style='width: 36px; height: 31px'
-            alt='logo'
-            src='/logo.svg'
-          /> */}
           <span className='hidden md:inline'>{header.site}</span>
         </a>
       </Link>
 
       <div className='text-sm text-gray-500 leading-5'>
+        <Link href='/posts'>
+          <a className='hover:text-gray-700' href='/posts'>
+            <span className='hidden sm:inline'>Blog</span>
+          </a>
+        </Link>
+        <span className='mr-2 ml-2'>·</span>
+
         {header.github && (
           <a
             className='hover:text-gray-700'
