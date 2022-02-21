@@ -6,7 +6,7 @@ const Article = ({ frontmatter, html, nextPost, prevPost }) => {
   return (
     <article className='xl:divide-y xl:divide-gray-200'>
       <header className='pt-6 xl:pb-10 space-y-1 text-center'>
-        {/* <Date date='date' /> */}
+        <Date date={frontmatter.date} />
         <h1
           className='
         text-3xl

@@ -37,7 +37,7 @@ const Author = () => (
                     rel='noopnener noreferrer'
                     className='link'
                   >
-                    {author.twitter}
+                    @{author.twitter}
                   </a>
                 </dd>
               </>
