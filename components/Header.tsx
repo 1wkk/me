@@ -13,7 +13,7 @@ const Header = () => (
 
       <div className='text-sm text-gray-500 leading-5'>
         <Link href='/posts'>
-          <a className='hover:text-gray-700' href='/posts'>
+          <a className='hover:text-gray-700'>
             <span className='hidden sm:inline'>Blog</span>
           </a>
         </Link>

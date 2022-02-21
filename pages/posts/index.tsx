@@ -45,7 +45,6 @@ const Posts = ({ posts }) => (
 
 export async function getStaticProps() {
   const posts = getSortedPostsInfo()
-  console.log(posts)
 
   return {
     props: {
