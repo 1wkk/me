@@ -2,18 +2,20 @@
 title: echo Eureka
 ---
 
-Hey, I am Anthony Fu, a fanatical open sourceror. Working at [NuxtLabs](https://nuxtlabs.com/).
+Hey, I am echo Eureka, a beginner who is keen on exploring and developing new things. Currently a student, based in Shanghai.
 
-Creator of [Vitest](https://github.com/vitest-dev/vitest), [Slidev](https://github.com/slidevjs/slidev), [VueUse](https://github.com/vueuse/vueuse), [UnoCSS](https://github.com/antfu/unocss), [Type Challenges](https://github.com/type-challenges/type-challenges) and [others](/projects).<br>
-Core team member of [Vue](https://vuejs.org/), [Nuxt](http://nuxtjs.org/) and [Vite](http://vitejs.dev/).<br>
-Team member of [Windi CSS](https://windicss.org/), [wenyan-lang 文言](https://wy-lang.org/) and [Intlify](https://github.com/intlify).
+The Earth lifeform that may appear at any time, blinking ✨ Skill points full, active in various fields and aspires to become a free independent developer.
 
-Dreaming up ideas and making them come true is where my passion lies. You can find my [full projects list here](/projects). I have also started a 100-day challenge about design, compform, interactivity, and experimenting with new things on [100.antfu.me](https://100.antfu.me/).
+Creator of [@useless/eureka](https://github.com/ryanmoyo/eureka), [vitepress-docs-cn](https://github.com/docschina/vitepress-docs-cn), WIP [@useless/design](https://github.com/ryanmoyo/design), [@useless/oi](https://github.com/ryanmoyo/olympiad-in-informatics) and [others](/).
 
-Outside of programming, I enjoy doing photography and traveling. Some of my photos can be found on [Instagram](https://www.instagram.com/antfu7). If you happen to be in the same city I live (currently in Shanghai), maybe we can hang out and take some photos or code together.
+Active participation in open source community building, have participated in [Vite](https://github.com/vitejs/vite), [Windi CSS](https://github.com/windicss/windicss), [VitePress](https://github.com/vuejs/vitepress) [vuepress-next](https://github.com/vuepress/vuepress-next) and [others](/).
+
+Team member of [@docschina](https://github.com/docschina), as an intern at [@ctripcorp](https://github.com/ctripcorp), maintain [vitepress-docs-cn](https://github.com/docschina/vitepress-docs-cn).
+
+Dreaming up ideas and making them come true is where my passion lies.
+
+Outside of programming, I enjoy ...
 
 ---
 
-Find me on [GitHub](https://github.com/antfu), [Twitter](https://www.twitter.com/antfu7) or [Zhihu](https://www.zhihu.com/people/antfu), mail me at [hi@antfu.me](mailto:hi@antfu.me), chat at [my Discord Server](https://chat.antfu.me).
-
-If you like my works, consider sponsoring me on [GitHub Sponsor](https://github.com/sponsors/antfu) to keep them sustainable.
+Find me on [GitHub](https://github.com/ryanmoyo), [Twitter](https://www.twitter.com/cryanmoyo), mail me at [iherewithmyheart@gmail.com](mailto:iherewithmyheart@gmail.com).
