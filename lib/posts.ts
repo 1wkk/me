@@ -18,6 +18,36 @@ export function getIndexInfo() {
   }
 }
 
+export function getSortedPostsInfo() {
+  const files = fs.readdirSync(postsDirectory)
+  const allPostsInfo = files.map(file => {
+    const id = file.replace(/\.md$/, '')
+
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, file)
+    const content = fs.readFileSync(fullPath, 'utf8')
+
+    const { data: frontmatter, excerpt } = matter(content, { excerpt: true })
+
+    return {
+      id,
+      date: frontmatter.date,
+      ...frontmatter,
+      excerpt: easyRenderer.render(excerpt)
+    }
+  })
+
+  return allPostsInfo.sort(({ date: a }, { date: b }) => {
+    if (a < b) {
+      return 1
+    } else if (a > b) {
+      return -1
+    } else {
+      return 0
+    }
+  })
+}
+
 export function getAllPostsIds() {
   const files = fs.readdirSync(postsDirectory)
   return files.map(file => {
