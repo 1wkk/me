@@ -3,7 +3,7 @@ import Date from '../../components/Date'
 import Link from 'next/link'
 
 const Posts = ({ posts }) => (
-  <main className='max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 divide-y divide-gray-200'>
+  <main className='flex justify-center max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 divide-y divide-gray-200'>
     <ul className='divide-y divide-gray-200'>
       {posts.map(({ id, title, excerpt, date }) => (
         <li className='py-12' key={id}>
