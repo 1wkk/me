@@ -16,14 +16,14 @@ const Header = () => (
           { text: 'Flomo', href: '/flomo' },
           { text: 'Motto', href: '/motto' }
         ].map(({ text, href }) => (
-          <>
+          <span key={text}>
             <Link href={href} key={text}>
               <a className='hover:text-gray-700'>
                 <span className='inline'>{text}</span>
               </a>
             </Link>
             <span className='mr-2 ml-2'>·</span>
-          </>
+          </span>
         ))}
 
         {header.github && (
