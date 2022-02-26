@@ -3,7 +3,7 @@ import { header } from '../theme.config'
 
 const Header = () => (
   <div id='header'>
-    <nav className='flex justify-between items-center py-10 font-bold'>
+    <nav className='flex justify-between items-center py-5 font-bold'>
       <Link href='/'>
         <a className='text-3xl' aria-label={header.site}>
           <span className='inline'>{header.site}</span>
