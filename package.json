@@ -8,9 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/head": "^0.7.5",
+    "prism-theme-vars": "^0.2.2",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.14",
-    "@vueuse/head": "^0.7.5"
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
