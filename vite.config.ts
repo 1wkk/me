@@ -43,7 +43,12 @@ export default defineConfig({
   },
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/]
+      include: [/\.vue$/, /\.md$/],
+      template: {
+        compilerOptions: {
+          isCustomElement: tag => tag === 'post'
+        }
+      }
     }),
     Markdown({
       wrapperComponent: 'post',

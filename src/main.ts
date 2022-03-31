@@ -26,6 +26,6 @@ export const createApp = ViteSSG(
   { routes },
   // function to have custom setups
   ({ app, router, routes, isClient, initialState }) => {
-    // install plugins etc.
+    // app.config.compilerOptions.isCustomElement = tag => tag === 'post'
   }
 )
