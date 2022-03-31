@@ -8,6 +8,11 @@ const router = createRouter({
   history: createWebHistory()
 })
 
+const scrollBehavior = (to: any, from: any, savedPosition: any) => {
+  if (savedPosition) return savedPosition
+  else return { top: 0 }
+}
+
 export const createApp = ViteSSG(
   // the root component
   App,

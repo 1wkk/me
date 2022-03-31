@@ -9,16 +9,11 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "types": ["vite/client", "vite-plugin-pages/client"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "env.d.ts"
-  ],
+  "exclude": ["dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
