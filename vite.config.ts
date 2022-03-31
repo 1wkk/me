@@ -1,20 +1,46 @@
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
+
 import Pages from 'vite-plugin-pages'
+
 import Markdown from 'vite-plugin-md'
 import { resolve } from 'path'
 import fs from 'fs-extra'
 // @ts-ignore
 import matter from 'gray-matter'
-
 import Prism from 'markdown-it-prism'
 import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import TOC from 'markdown-it-table-of-contents'
 import { slugify } from './scripts/slugify'
 
+import Unocss from 'unocss/vite'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
+
+import Inspect from 'vite-plugin-inspect'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import SVG from 'vite-svg-loader'
+import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+
+import 'prismjs/components/prism-regex'
+import 'prismjs/components/prism-javascript'
+import 'prismjs/components/prism-typescript'
+import 'prismjs/components/prism-xml-doc'
+import 'prismjs/components/prism-yaml'
+import 'prismjs/components/prism-json'
+import 'prismjs/components/prism-markdown'
+import 'prismjs/components/prism-java'
+import 'prismjs/components/prism-javadoclike'
+import 'prismjs/components/prism-javadoc'
+import 'prismjs/components/prism-jsdoc'
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  optimizeDeps: {
+    include: ['vue', 'vue-router']
+  },
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/]
@@ -50,6 +76,7 @@ export default defineConfig({
         })
       }
     }),
+
     Pages({
       extensions: ['vue', 'md'],
       dirs: 'pages',
@@ -64,6 +91,65 @@ export default defineConfig({
 
         return route
       }
+    }),
+
+    Unocss({
+      theme: {
+        fontFamily: {
+          sans: '"Inter", Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji'
+        }
+      },
+      presets: [
+        presetIcons({
+          extraProperties: {
+            'display': 'inline-block',
+            'height': '1.2em',
+            'width': '1.2em',
+            'vertical-align': 'text-bottom'
+          }
+        }),
+        presetAttributify(),
+        presetUno()
+      ]
+    }),
+
+    AutoImport({
+      imports: ['vue', 'vue-router', '@vueuse/head']
+    }),
+
+    Components({
+      extensions: ['vue', 'md'],
+      dts: true,
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      resolvers: [
+        IconsResolver({
+          componentPrefix: ''
+        })
+      ]
+    }),
+
+    Inspect(),
+
+    Icons({
+      defaultClass: 'inline',
+      defaultStyle: 'vertical-align: sub;'
+    }),
+
+    SVG({
+      svgo: false
     })
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      onwarn(warning, next) {
+        if (warning.code !== 'UNUSED_EXTERNAL_IMPORT') next(warning)
+      }
+    }
+  },
+
+  // @ts-ignore
+  ssgOptions: {
+    formatting: 'minify',
+    format: 'cjs'
+  }
 })

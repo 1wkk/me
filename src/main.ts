@@ -3,6 +3,9 @@ import { ViteSSG } from 'vite-ssg'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from '~pages'
 
+import 'uno.css'
+import '@unocss/reset/tailwind.css'
+
 const router = createRouter({
   routes,
   history: createWebHistory()

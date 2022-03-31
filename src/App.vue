@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <router-view />
+  <main class="px-7 py-10">
+    <router-view />
+  </main>
 </template>
 
 <style></style>
