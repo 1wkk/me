@@ -18,4 +18,5 @@ Outside of programming, I enjoy ...
 
 ---
 
+More about me in [wolai](https://www.wolai.com/9iBhQjUJgyGmP7mGyrB4LD).
 Find me on [GitHub](https://github.com/ryanmoyo), [Twitter](https://www.twitter.com/cryanmoyo), mail me at [iherewithmyheart@gmail.com](mailto:iherewithmyheart@gmail.com).
