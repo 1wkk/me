@@ -4,7 +4,12 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    FeatherTwitter: typeof import('~icons/feather/twitter')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    NavBar: typeof import('./src/components/NavBar.vue')['default']
+    RiMoonLine: typeof import('~icons/ri/moon-line')['default']
+    RiSunLine: typeof import('~icons/ri/sun-line')['default']
+    ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
   }
 }
 

@@ -23,7 +23,7 @@ export const createApp = ViteSSG(
   // the root component
   App,
   // vue-router options
-  { routes },
+  { routes, scrollBehavior },
   // function to have custom setups
   ({ app, router, routes, isClient, initialState }) => {
     // app.config.compilerOptions.isCustomElement = tag => tag === 'post'
