@@ -8,3 +8,4 @@
 
 - [flomo](https://flomoapp.com/)
 - [Notion API](https://developers.notion.com/)
+- [Vercel](https://vercel.com)
