@@ -8,12 +8,15 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
 body {
   --at-apply: m0 w-screen;
 }
 
 #__nuxt {
   --at-apply: p-8 mx-auto prose prose-gray;
+  font-family: 'Baloo 2', cursive;
 }
 
 a {
