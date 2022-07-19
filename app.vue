@@ -16,7 +16,7 @@ body {
 }
 
 #__nuxt {
-  --at-apply: p-8 mx-auto prose prose-gray;
+  --at-apply: p-4 mx-auto prose prose-gray;
 }
 
 a {
