@@ -12,11 +12,11 @@
 
 body {
   --at-apply: m0 w-screen;
+  font-family: 'Baloo 2';
 }
 
 #__nuxt {
   --at-apply: p-8 mx-auto prose prose-gray;
-  font-family: 'Baloo 2', cursive;
 }
 
 a {
