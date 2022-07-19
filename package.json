@@ -1,12 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev -o",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "b": "nuxt build",
+    "d": "nuxt dev -o",
+    "g": "nuxt generate",
+    "p": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "@iconify/json": "^2.1.79",
+    "@nuxt/content-edge": "latest",
+    "@unocss/nuxt": "^0.44.3",
+    "nuxt": "3.0.0-rc.5",
+    "sitemap": "^7.1.1"
   }
 }
