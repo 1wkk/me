@@ -3,7 +3,9 @@
     <Link rel="icon" href="assets/i.ico" />
   </Head>
   <Header />
-  <NuxtPage />
+  <main p-4>
+    <NuxtPage />
+  </main>
   <Footer />
 </template>
 

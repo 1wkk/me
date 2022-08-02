@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     rules: []
   },
   content: {
+    documentDriven: true,
     highlight: {
       theme: 'github-light'
     }

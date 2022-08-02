@@ -1,6 +1,6 @@
 <template>
   <ContentList path="/posts" v-slot="{ list }">
-    <ul list-none p-4 space-y-4xl>
+    <ul list-none space-y-4xl>
       <li v-for="article in list" :key="article._path">
         <a :href="article._path" no-underline>
           <div text-lg hover:underline>{{ article.title }}</div>

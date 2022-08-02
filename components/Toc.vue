@@ -14,10 +14,10 @@
     transition-duration-500
   >
     <li v-for="(h2, i) in toc.links" :key="i" m-14px>
-      <NuxtLink :to="`#${h2.id}`">{{ h2.text }}</NuxtLink>
+      <a :href="`#${h2.id}`">{{ h2.text }}</a>
       <ul v-if="h2.children" list-none>
         <li v-for="(h3, i) in h2.children" :key="i" m-14px>
-          <NuxtLink :to="`#${h3.id}`">{{ h3.text }}</NuxtLink>
+          <a :href="`#${h3.id}`">{{ h3.text }}</a>
         </li>
       </ul>
     </li>
